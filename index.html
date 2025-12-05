@@ -1,0 +1,993 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RIWAYAT | The Elegance Edit</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'brand-gold': '#D4AF37',
+                        'brand-cream': '#FDFBF7',
+                        'brand-dark': '#111111',
+                        'brand-gray': '#888888',
+                        'brand-pink-light': '#FFF0E5'
+                    },
+                    fontFamily: {
+                        serif: ['"Cormorant Garamond"', 'serif'],
+                        sans: ['"Montserrat"', 'sans-serif'],
+                    },
+                    letterSpacing: {
+                        'luxury': '0.25em',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="font-sans text-brand-dark antialiased bg-brand-cream">
+
+    <!-- Navbar -->
+    <nav id="navbar" class="fixed w-full z-50 transition-all duration-500 navbar-transparent text-white group/nav">
+        <div class="max-w-[1600px] mx-auto px-6 lg:px-12">
+            <div class="flex justify-between items-center h-full">
+
+                <!-- Left Nav -->
+                <div class="hidden md:flex items-center gap-8 text-[11px] font-medium uppercase tracking-widest">
+                    <a href="#" class="hover:text-brand-gold transition hover-underline-animation">Home</a>
+
+                    <div class="nav-item h-full flex items-center">
+                        <a href="#"
+                            class="hover:text-brand-gold transition py-6 inline-block hover-underline-animation">Clothing</a>
+                        <!-- Mega Menu -->
+                        <div class="mega-menu-container text-brand-dark p-12 text-left">
+                            <div class="max-w-[1400px] mx-auto grid grid-cols-4 gap-12">
+                                <div>
+                                    <h4 class="font-serif text-xl mb-6 text-brand-gold italic">New Season</h4>
+                                    <ul class="space-y-3 text-xs text-gray-600">
+                                        <li><a href="#" class="hover:text-brand-dark transition block">Spring Summer
+                                                '24</a></li>
+                                        <li><a href="#" class="hover:text-brand-dark transition block">The Linen
+                                                Edit</a></li>
+                                        <li><a href="#" class="hover:text-brand-dark transition block">Occasion Wear</a>
+                                        </li>
+                                        <li><a href="#" class="hover:text-brand-dark transition block">Best Sellers</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <h4 class="font-serif text-xl mb-6 text-brand-gold italic">Categories</h4>
+                                    <ul class="space-y-3 text-xs text-gray-600">
+                                        <li><a href="#" class="hover:text-brand-dark transition block">Dresses &
+                                                Jumpsuits</a></li>
+                                        <li><a href="#" class="hover:text-brand-dark transition block">Tops & Shirts</a>
+                                        </li>
+                                        <li><a href="#" class="hover:text-brand-dark transition block">Trousers &
+                                                Skirts</a></li>
+                                        <li><a href="#" class="hover:text-brand-dark transition block">Coats &
+                                                Jackets</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-span-2 grid grid-cols-2 gap-4">
+                                    <a href="#" class="group block relative overflow-hidden h-48">
+                                        <img src="https://images.unsplash.com/photo-1595777457583-95e059d581b8?w=400"
+                                            class="w-full h-full object-cover transition duration-700 group-hover:scale-105">
+                                        <div class="absolute inset-0 bg-black/10 group-hover:bg-black/0 transition">
+                                        </div>
+                                        <span
+                                            class="absolute bottom-4 left-4 text-white text-xs font-bold uppercase tracking-widest">New
+                                            In Dresses</span>
+                                    </a>
+                                    <a href="#" class="group block relative overflow-hidden h-48">
+                                        <img src="https://images.unsplash.com/photo-1543163521-1bf539c55dd2?w=400"
+                                            class="w-full h-full object-cover transition duration-700 group-hover:scale-105">
+                                        <div class="absolute inset-0 bg-black/10 group-hover:bg-black/0 transition">
+                                        </div>
+                                        <span
+                                            class="absolute bottom-4 left-4 text-white text-xs font-bold uppercase tracking-widest">The
+                                            Shoe Edit</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="nav-item h-full flex items-center">
+                        <a href="#"
+                            class="hover:text-brand-gold transition py-6 inline-block hover-underline-animation">Collections</a>
+                        <!-- Mega Menu -->
+                        <div class="mega-menu-container text-brand-dark p-12 text-left">
+                            <div class="max-w-[1400px] mx-auto grid grid-cols-12 gap-12">
+                                <div class="col-span-3">
+                                    <h4 class="font-serif text-xl mb-6 text-brand-gold italic">Featured</h4>
+                                    <ul class="space-y-3 text-xs text-gray-600">
+                                        <li><a href="#" class="hover:text-brand-dark transition block">Minimalist
+                                                Luxe</a></li>
+                                        <li><a href="#" class="hover:text-brand-dark transition block">Bohemian
+                                                Spirit</a></li>
+                                        <li><a href="#" class="hover:text-brand-dark transition block">Office
+                                                Essentials</a></li>
+                                        <li><a href="#" class="hover:text-brand-dark transition block">Vacation Shop</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-span-9 grid grid-cols-3 gap-6">
+                                    <a href="#" class="group block relative overflow-hidden h-64">
+                                        <img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?w=600"
+                                            class="w-full h-full object-cover transition duration-700 group-hover:scale-105">
+                                        <div class="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition">
+                                        </div>
+                                        <div class="absolute bottom-6 left-6 text-white">
+                                            <p class="font-serif text-2xl italic">Bohemian</p>
+                                            <span
+                                                class="text-[10px] uppercase tracking-widest border-b border-white pb-1">Explore</span>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="group block relative overflow-hidden h-64">
+                                        <img src="https://images.unsplash.com/photo-1550614000-4b9519e0965d?w=600"
+                                            class="w-full h-full object-cover transition duration-700 group-hover:scale-105">
+                                        <div class="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition">
+                                        </div>
+                                        <div class="absolute bottom-6 left-6 text-white">
+                                            <p class="font-serif text-2xl italic">Minimalist</p>
+                                            <span
+                                                class="text-[10px] uppercase tracking-widest border-b border-white pb-1">Explore</span>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="group block relative overflow-hidden h-64">
+                                        <img src="https://images.unsplash.com/photo-1487222477894-8943e31ef7b2?w=600"
+                                            class="w-full h-full object-cover transition duration-700 group-hover:scale-105">
+                                        <div class="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition">
+                                        </div>
+                                        <div class="absolute bottom-6 left-6 text-white">
+                                            <p class="font-serif text-2xl italic">Workwear</p>
+                                            <span
+                                                class="text-[10px] uppercase tracking-widest border-b border-white pb-1">Explore</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="#" class="hover:text-brand-gold transition hover-underline-animation">Jewellery</a>
+                    <a href="#" class="hover:text-brand-gold transition hover-underline-animation">About</a>
+                </div>
+
+                <!-- Logo -->
+                <a href="#"
+                    class="font-serif text-4xl tracking-widest font-semibold hover:text-brand-gold transition duration-300 absolute left-1/2 transform -translate-x-1/2">RIWAYAT</a>
+
+                <!-- Right Icons -->
+                <div class="hidden md:flex items-center gap-6">
+                    <!-- Animated Search -->
+                    <div class="search-container" id="search-container">
+                        <div class="search-input-wrapper">
+                            <input type="text" class="search-input" placeholder="Search...">
+                        </div>
+                        <button onclick="toggleSearch()" class="hover:text-brand-gold transition"><i
+                                class="fas fa-search text-lg"></i></button>
+                    </div>
+
+                    <!-- Account Dropdown -->
+                    <div class="account-wrapper">
+                        <button class="hover:text-brand-gold transition py-4"><i
+                                class="far fa-user text-lg"></i></button>
+                        <div class="account-dropdown-menu">
+                            <a href="#" class="account-item">Sign In</a>
+                            <a href="#" class="account-item">Register</a>
+                            <a href="#" class="account-item">My Orders</a>
+                            <a href="#" class="account-item">Wishlist</a>
+                        </div>
+                    </div>
+
+                    <button class="hover:text-brand-gold transition relative">
+                        <i class="fas fa-shopping-bag text-lg"></i>
+                        <span
+                            class="absolute -top-1 -right-1 bg-brand-gold text-white text-[9px] w-3.5 h-3.5 rounded-full flex items-center justify-center">0</span>
+                    </button>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button onclick="toggleMobileMenu()" class="md:hidden text-2xl"><i class="fas fa-bars"></i></button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu"
+            class="hidden absolute top-full left-0 w-full bg-white text-brand-dark border-t border-gray-100 p-6 shadow-lg h-screen overflow-y-auto">
+            <div class="flex flex-col space-y-6 text-center text-sm uppercase tracking-widest font-medium">
+                <a href="#">Home</a>
+                <a href="#">Clothing</a>
+                <a href="#">Collections</a>
+                <a href="#">Jewellery</a>
+                <a href="#">About Us</a>
+                <a href="#" class="text-red-800">Sale</a>
+                <div class="flex justify-center gap-6 pt-6 border-t border-gray-100">
+                    <a href="#">Account</a>
+                    <a href="#">Search</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section (Full Screen) -->
+    <header class="hero-section relative w-full flex items-center justify-center">
+        <!-- Background Image -->
+        <div class="absolute inset-0">
+            <img src="https://res.cloudinary.com/dwv2wwdki/image/upload/v1763654574/Lucid_Origin_Banarasi_Silk_Lehenga_women_fashion_model_in_a_fu_1_n0yylp.jpg"
+                class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-black/20"></div>
+            <div class="hero-overlay absolute inset-0"></div>
+        </div>
+
+        <!-- Content -->
+        <div class="relative z-10 text-center text-white px-4 max-w-4xl mx-auto mt-20">
+            <p class="text-xs md:text-sm font-medium tracking-[0.4em] mb-6 uppercase animate-fade-up">The Spring
+                Collection</p>
+            <h1 class="font-serif text-6xl md:text-8xl lg:text-9xl mb-8 leading-none animate-fade-up delay-100">
+                <span class="italic font-light block">Elegance</span>
+                <span class="font-medium block -mt-2 md:-mt-4">Redefined</span>
+            </h1>
+            <div class="animate-fade-up delay-200">
+                <button
+                    class="group relative px-10 py-4 bg-white/10 backdrop-blur-sm border border-white text-white text-xs uppercase tracking-widest hover:bg-white hover:text-brand-dark transition duration-300">
+                    Discover Now
+                </button>
+            </div>
+        </div>
+
+        <!-- Scroll Indicator -->
+        <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce text-white/70">
+            <span class="text-[10px] uppercase tracking-widest mb-2 block">Scroll</span>
+            <i class="fas fa-chevron-down font-light"></i>
+        </div>
+    </header>
+
+    <!-- Trending Now -->
+    <section class="trending-section py-32 max-w-[1600px] mx-auto px-6 lg:px-12">
+        <div class="trending-header flex flex-col md:flex-row justify-between items-end mb-20 reveal">
+            <div>
+                <span class="subtitle text-xs font-bold uppercase tracking-widest mb-4 block">This Week's
+                    Favorites</span>
+                <h2 class="title font-serif text-4xl md:text-6xl">Trending Now</h2>
+            </div>
+            <a href="#"
+                class="hidden md:inline-block text-xs uppercase tracking-widest border-b border-brand-dark pb-1 hover:text-brand-gold hover:border-brand-gold transition mt-4 md:mt-0 hover:shadow-lg hover:shadow-brand-gold/20">View
+                All Products</a>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-8 gap-y-16 reveal">
+            <!-- Product 1 -->
+            <div class="trending-product-card group cursor-pointer">
+                <div class="trending-product-image relative aspect-[3/4] overflow-hidden">
+                    <span class="trending-product-badge">New</span>
+                    <img src="https://images.unsplash.com/photo-1572804013309-59a88b7e92f1?w=800"
+                        class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105">
+                    <div class="trending-product-actions">
+                        <button class="trending-action-btn" title="Quick View">
+                            <i class="fas fa-eye text-xs"></i>
+                        </button>
+                        <button class="trending-action-btn" title="Add to Cart">
+                            <i class="fas fa-shopping-cart text-xs"></i>
+                        </button>
+                        <button class="trending-action-btn" title="Add to Wishlist">
+                            <i class="far fa-heart text-xs"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="trending-product-info">
+                    <h3 class="trending-product-title">Gold Layered Chain</h3>
+                    <p class="trending-product-category">Jewellery Edit</p>
+                    <span class="trending-product-price">$145.00</span>
+                </div>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="trending-product-card group cursor-pointer">
+                <div class="trending-product-image relative aspect-[3/4] overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1600607686527-6fb886090705?w=800"
+                        class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105">
+                    <div class="trending-product-actions">
+                        <button class="trending-action-btn" title="Quick View">
+                            <i class="fas fa-eye text-xs"></i>
+                        </button>
+                        <button class="trending-action-btn" title="Add to Cart">
+                            <i class="fas fa-shopping-cart text-xs"></i>
+                        </button>
+                        <button class="trending-action-btn" title="Add to Wishlist">
+                            <i class="far fa-heart text-xs"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="trending-product-info">
+                    <h3 class="trending-product-title">Gold Layered Chain</h3>
+                    <p class="trending-product-category">Jewellery Edit</p>
+                    <span class="trending-product-price">$145.00</span>
+                </div>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="trending-product-card group cursor-pointer">
+                <div class="trending-product-image relative aspect-[3/4] overflow-hidden">
+                    <span class="trending-product-badge">Best Seller</span>
+                    <img src="https://images.unsplash.com/photo-1611591437281-460bfbe1220a?w=800"
+                        class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105">
+                    <div class="trending-product-actions">
+                        <button class="trending-action-btn" title="Quick View">
+                            <i class="fas fa-eye text-xs"></i>
+                        </button>
+                        <button class="trending-action-btn" title="Add to Cart">
+                            <i class="fas fa-shopping-cart text-xs"></i>
+                        </button>
+                        <button class="trending-action-btn" title="Add to Wishlist">
+                            <i class="far fa-heart text-xs"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="trending-product-info">
+                    <h3 class="trending-product-title">Circle Pendant</h3>
+                    <p class="trending-product-category">Timeless Collection</p>
+                    <span class="trending-product-price">$89.00</span>
+                </div>
+            </div>
+
+            <!-- Product 4 -->
+            <div class="trending-product-card group cursor-pointer">
+                <div class="trending-product-image relative aspect-[3/4] overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1551107696-a4b0c5a0d9a2?w=800"
+                        class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105">
+                    <div class="trending-product-actions">
+                        <button class="trending-action-btn" title="Quick View">
+                            <i class="fas fa-eye text-xs"></i>
+                        </button>
+                        <button class="trending-action-btn" title="Add to Cart">
+                            <i class="fas fa-shopping-cart text-xs"></i>
+                        </button>
+                        <button class="trending-action-btn" title="Add to Wishlist">
+                            <i class="far fa-heart text-xs"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="trending-product-info">
+                    <h3 class="trending-product-title">Leather Ankle Boots</h3>
+                    <p class="trending-product-category">Winter Essentials</p>
+                    <span class="trending-product-price">$285.00</span>
+                </div>
+            </div>
+
+            <!-- Product 5 -->
+            <div class="trending-product-card group cursor-pointer">
+                <div class="trending-product-image relative aspect-[3/4] overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1543163521-1bf539c55dd2?w=800"
+                        class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105">
+                    <div class="trending-product-actions">
+                        <button class="trending-action-btn" title="Quick View">
+                            <i class="fas fa-eye text-xs"></i>
+                        </button>
+                        <button class="trending-action-btn" title="Add to Cart">
+                            <i class="fas fa-shopping-cart text-xs"></i>
+                        </button>
+                        <button class="trending-action-btn" title="Add to Wishlist">
+                            <i class="far fa-heart text-xs"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="trending-product-info">
+                    <h3 class="trending-product-title">Suede Chelsea Boot</h3>
+                    <p class="trending-product-category">Beige Edition</p>
+                    <span class="trending-product-price">$195.00</span>
+                </div>
+            </div>
+
+            <!-- Product 6 -->
+            <div class="trending-product-card group cursor-pointer">
+                <div class="trending-product-image relative aspect-[3/4] overflow-hidden">
+                    <span class="trending-product-badge">Limited</span>
+                    <img src="https://images.unsplash.com/photo-1595777457583-95e059d581b8?w=800"
+                        class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105">
+                    <div class="trending-product-actions">
+                        <button class="trending-action-btn" title="Quick View">
+                            <i class="fas fa-eye text-xs"></i>
+                        </button>
+                        <button class="trending-action-btn" title="Add to Cart">
+                            <i class="fas fa-shopping-cart text-xs"></i>
+                        </button>
+                        <button class="trending-action-btn" title="Add to Wishlist">
+                            <i class="far fa-heart text-xs"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="trending-product-info">
+                    <h3 class="trending-product-title">Minimalist Luxe Dress</h3>
+                    <p class="trending-product-category">Evening Wear</p>
+                    <span class="trending-product-price">$320.00</span>
+                </div>
+            </div>
+
+            <!-- Product 7 -->
+            <div class="trending-product-card group cursor-pointer">
+                <div class="trending-product-image relative aspect-[3/4] overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1584917865442-de89df76afd3?w=800"
+                        class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105">
+                    <div class="trending-product-actions">
+                        <button class="trending-action-btn" title="Quick View">
+                            <i class="fas fa-eye text-xs"></i>
+                        </button>
+                        <button class="trending-action-btn" title="Add to Cart">
+                            <i class="fas fa-shopping-cart text-xs"></i>
+                        </button>
+                        <button class="trending-action-btn" title="Add to Wishlist">
+                            <i class="far fa-heart text-xs"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="trending-product-info">
+                    <h3 class="trending-product-title">Classic Denim</h3>
+                    <p class="trending-product-category">Everyday Essentials</p>
+                    <span class="trending-product-price">$110.00</span>
+                </div>
+            </div>
+
+            <!-- Product 8 -->
+            <div class="trending-product-card group cursor-pointer">
+                <div class="trending-product-image relative aspect-[3/4] overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1596870230751-ebdfce98ec42?w=800"
+                        class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105">
+                    <div class="trending-product-actions">
+                        <button class="trending-action-btn" title="Quick View">
+                            <i class="fas fa-eye text-xs"></i>
+                        </button>
+                        <button class="trending-action-btn" title="Add to Cart">
+                            <i class="fas fa-shopping-cart text-xs"></i>
+                        </button>
+                        <button class="trending-action-btn" title="Add to Wishlist">
+                            <i class="far fa-heart text-xs"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="trending-product-info">
+                    <h3 class="trending-product-title">Noir Ankle Boots</h3>
+                    <p class="trending-product-category">Premium Leather</p>
+                    <span class="trending-product-price">$295.00</span>
+                </div>
+            </div>
+            </div>
+    </section>
+
+    <!-- Shop By Category -->
+    <section class="shop-category-section py-32 bg-gradient-to-br from-white via-brand-cream/30 to-brand-gold/5 relative overflow-hidden">
+        <!-- Background Pattern -->
+        <div class="absolute inset-0 opacity-5">
+            <div class="absolute top-10 left-10 w-32 h-32 border border-brand-gold/20 rounded-full"></div>
+            <div class="absolute top-40 right-20 w-24 h-24 border border-brand-gold/20 rounded-full"></div>
+            <div class="absolute bottom-20 left-1/4 w-20 h-20 border border-brand-gold/20 rounded-full"></div>
+            <div class="absolute bottom-40 right-1/3 w-16 h-16 border border-brand-gold/20 rounded-full"></div>
+        </div>
+
+        <div class="max-w-[1600px] mx-auto px-6 lg:px-12 relative z-10">
+            <div class="shop-category-header flex flex-col md:flex-row justify-between items-end mb-20 reveal">
+                <div>
+                    <span class="category-subtitle text-brand-gold text-xs font-bold uppercase tracking-widest mb-4 block">Curated Collections</span>
+                    <h2 class="category-title font-serif text-4xl md:text-6xl text-brand-dark">Shop By Category</h2>
+                </div>
+                <a href="#"
+                    class="hidden md:inline-block text-xs uppercase tracking-widest border-b-2 border-brand-dark pb-2 hover:text-brand-gold hover:border-brand-gold transition-all duration-300 mt-4 md:mt-0 hover:shadow-lg hover:shadow-brand-gold/20">View
+                    All Categories</a>
+            </div>
+
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 reveal">
+                <!-- Item 1: Dresses -->
+                <a href="#" class="category-card group relative block aspect-[3/4] overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?w=600&q=80"
+                        class="category-image w-full h-full object-cover">
+                    <div class="category-overlay absolute inset-0"></div>
+                    <div class="category-content">
+                        <span class="category-name font-serif text-2xl italic block">Dresses</span>
+                        <span class="category-link">Explore</span>
+                    </div>
+                </a>
+
+                <!-- Item 2: Tops -->
+                <a href="#" class="category-card group relative block aspect-[3/4] overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1434389677669-e08b4cac3105?w=600&q=80"
+                        class="category-image w-full h-full object-cover">
+                    <div class="category-overlay absolute inset-0"></div>
+                    <div class="category-content">
+                        <span class="category-name font-serif text-2xl italic block">Tops</span>
+                        <span class="category-link">Explore</span>
+                    </div>
+                </a>
+
+                <!-- Item 3: Bottoms -->
+                <a href="#" class="category-card group relative block aspect-[3/4] overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1541099649105-f69ad21f3246?w=600&q=80"
+                        class="category-image w-full h-full object-cover">
+                    <div class="category-overlay absolute inset-0"></div>
+                    <div class="category-content">
+                        <span class="category-name font-serif text-2xl italic block">Bottoms</span>
+                        <span class="category-link">Explore</span>
+                    </div>
+                </a>
+
+                <!-- Item 4: Earrings -->
+                <a href="#" class="category-card group relative block aspect-[3/4] overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?w=600&q=80"
+                        class="category-image w-full h-full object-cover">
+                    <div class="category-overlay absolute inset-0"></div>
+                    <div class="category-content">
+                        <span class="category-name font-serif text-2xl italic block">Earrings</span>
+                        <span class="category-link">Explore</span>
+                    </div>
+                </a>
+
+                <!-- Item 5: Necklaces -->
+                <a href="#" class="category-card group relative block aspect-[3/4] overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1599643478518-17488fbbcd75?w=600&q=80"
+                        class="category-image w-full h-full object-cover">
+                    <div class="category-overlay absolute inset-0"></div>
+                    <div class="category-content">
+                        <span class="category-name font-serif text-2xl italic block">Necklaces</span>
+                        <span class="category-link">Explore</span>
+                    </div>
+                </a>
+
+                <!-- Item 6: Rings -->
+                <a href="#" class="category-card group relative block aspect-[3/4] overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1605100804763-247f67b3557e?w=600&q=80"
+                        class="category-image w-full h-full object-cover">
+                    <div class="category-overlay absolute inset-0"></div>
+                    <div class="category-content">
+                        <span class="category-name font-serif text-2xl italic block">Rings</span>
+                        <span class="category-link">Explore</span>
+                    </div>
+                </a>
+
+                <!-- Item 7: Bags -->
+                <a href="#" class="category-card group relative block aspect-[3/4] overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1584917865442-de89df76afd3?w=600&q=80"
+                        class="category-image w-full h-full object-cover">
+                    <div class="category-overlay absolute inset-0"></div>
+                    <div class="category-content">
+                        <span class="category-name font-serif text-2xl italic block">Bags</span>
+                        <span class="category-link">Explore</span>
+                    </div>
+                </a>
+
+                <!-- Item 8: Sandals -->
+                <a href="#" class="category-card group relative block aspect-[3/4] overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1543163521-1bf539c55dd2?w=600&q=80"
+                        class="category-image w-full h-full object-cover">
+                    <div class="category-overlay absolute inset-0"></div>
+                    <div class="category-content">
+                        <span class="category-name font-serif text-2xl italic block">Sandals</span>
+                        <span class="category-link">Explore</span>
+                    </div>
+                </a>
+
+                <!-- Item 9: Heels -->
+                <a href="#" class="category-card group relative block aspect-[3/4] overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1560343090-f0409e92791a?w=600&q=80"
+                        class="category-image w-full h-full object-cover">
+                    <div class="category-overlay absolute inset-0"></div>
+                    <div class="category-content">
+                        <span class="category-name font-serif text-2xl italic block">Heels</span>
+                        <span class="category-link">Explore</span>
+                    </div>
+                </a>
+
+                <!-- Item 10: Sneakers -->
+                <a href="#" class="category-card group relative block aspect-[3/4] overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?w=600&q=80"
+                        class="category-image w-full h-full object-cover">
+                    <div class="category-overlay absolute inset-0"></div>
+                    <div class="category-content">
+                        <span class="category-name font-serif text-2xl italic block">Sneakers</span>
+                        <span class="category-link">Explore</span>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Style Quiz Banner -->
+            <div class="style-quiz-banner mt-32 relative overflow-hidden reveal">
+                <div class="absolute inset-0">
+                    <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?w=1600&q=80"
+                        class="w-full h-full object-cover">
+                    <div class="style-quiz-overlay absolute inset-0"></div>
+                </div>
+                <div class="style-quiz-content">
+                    <span class="quiz-subtitle text-xs font-bold uppercase tracking-widest mb-4 block">Personalized For You</span>
+                    <h3 class="quiz-title font-serif">Find Your Perfect Style</h3>
+                    <p class="quiz-description">Unsure what suits you best? Take our AI-powered style quiz to discover looks curated just for you.</p>
+                    <button class="quiz-button">Take Style Quiz</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AI Design Studio -->
+    <section class="py-24 bg-brand-dark text-white relative overflow-hidden">
+        <!-- Background Elements -->
+        <div class="absolute top-0 left-0 w-full h-full overflow-hidden opacity-20 pointer-events-none">
+            <div class="absolute top-[-10%] left-[-10%] w-[40%] h-[40%] bg-brand-gold rounded-full blur-[100px]"></div>
+            <div class="absolute bottom-[-10%] right-[-10%] w-[40%] h-[40%] bg-purple-900 rounded-full blur-[100px]">
+            </div>
+        </div>
+
+        <div class="max-w-[1400px] mx-auto px-6 lg:px-12 relative z-10">
+            <div class="text-center mb-20 reveal">
+                <span class="text-brand-gold text-xs font-bold uppercase tracking-widest mb-4 block">Innovation</span>
+                <h2 class="font-serif text-4xl md:text-6xl mb-6">AI Design Studio</h2>
+                <p class="text-gray-400 max-w-2xl mx-auto font-light">Experience the future of fashion with our
+                    cutting-edge AI tools. Personalize, visualize, and create your perfect look.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 reveal">
+                <!-- Feature 1: Virtual Try-On -->
+                <div
+                    class="group bg-white/5 backdrop-blur-sm border border-white/10 p-8 hover:bg-white/10 transition duration-500">
+                    <div
+                        class="h-16 w-16 bg-brand-gold/20 rounded-full flex items-center justify-center mb-8 text-brand-gold text-2xl group-hover:scale-110 transition">
+                        <i class="fas fa-camera"></i>
+                    </div>
+                    <h3 class="font-serif text-2xl mb-4">Virtual Try-On</h3>
+                    <p class="text-sm text-gray-400 mb-8 leading-relaxed">Upload your photo and see how our latest
+                        collections fit you perfectly in real-time. No more guessing.</p>
+                    <a href="#"
+                        class="text-xs uppercase tracking-widest border-b border-brand-gold pb-1 hover:text-brand-gold transition">Try
+                        It Now</a>
+                </div>
+
+                <!-- Feature 2: AI Stylist -->
+                <div
+                    class="group bg-white/5 backdrop-blur-sm border border-white/10 p-8 hover:bg-white/10 transition duration-500">
+                    <div
+                        class="h-16 w-16 bg-brand-gold/20 rounded-full flex items-center justify-center mb-8 text-brand-gold text-2xl group-hover:scale-110 transition">
+                        <i class="fas fa-magic"></i>
+                    </div>
+                    <h3 class="font-serif text-2xl mb-4">AI Personal Stylist</h3>
+                    <p class="text-sm text-gray-400 mb-8 leading-relaxed">Chat with our AI stylist to get personalized
+                        outfit recommendations based on your body type and occasion.</p>
+                    <a href="#"
+                        class="text-xs uppercase tracking-widest border-b border-brand-gold pb-1 hover:text-brand-gold transition">Start
+                        Chat</a>
+                </div>
+
+                <!-- Feature 3: Mix & Match -->
+                <div
+                    class="group bg-white/5 backdrop-blur-sm border border-white/10 p-8 hover:bg-white/10 transition duration-500">
+                    <div
+                        class="h-16 w-16 bg-brand-gold/20 rounded-full flex items-center justify-center mb-8 text-brand-gold text-2xl group-hover:scale-110 transition">
+                        <i class="fas fa-layer-group"></i>
+                    </div>
+                    <h3 class="font-serif text-2xl mb-4">Mix & Match Studio</h3>
+                    <p class="text-sm text-gray-400 mb-8 leading-relaxed">Create your own unique look by mixing
+                        different pieces from our collection on a virtual canvas.</p>
+                    <a href="#"
+                        class="text-xs uppercase tracking-widest border-b border-brand-gold pb-1 hover:text-brand-gold transition">Create
+                        Look</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Collections -->
+    <section class="py-20 max-w-[1400px] mx-auto px-6 lg:px-12">
+        <div class="text-center mb-12 reveal">
+            <h2 class="font-serif text-3xl md:text-4xl text-brand-dark uppercase tracking-widest">Featured Collections
+            </h2>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 reveal">
+            <!-- Collection 1 -->
+            <div class="group relative h-[500px] overflow-hidden cursor-pointer">
+                <img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?w=800"
+                    class="w-full h-full object-cover transition duration-700 group-hover:scale-105">
+                <div class="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition"></div>
+                <div class="absolute bottom-8 left-8 text-white">
+                    <h3 class="font-serif text-2xl mb-2">Bohemian Chic</h3>
+                    <a href="#" class="text-[10px] uppercase tracking-widest border-b border-white pb-1">Shop Now</a>
+                </div>
+            </div>
+
+            <!-- Collection 2 -->
+            <div class="group relative h-[500px] overflow-hidden cursor-pointer">
+                <img src="https://images.unsplash.com/photo-1550614000-4b9519e0965d?w=800"
+                    class="w-full h-full object-cover transition duration-700 group-hover:scale-105">
+                <div class="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition"></div>
+                <div class="absolute bottom-8 left-8 text-white">
+                    <h3 class="font-serif text-2xl mb-2">Minimalist Luxe</h3>
+                    <a href="#" class="text-[10px] uppercase tracking-widest border-b border-white pb-1">Shop Now</a>
+                </div>
+            </div>
+
+            <!-- Collection 3 -->
+            <div class="group relative h-[500px] overflow-hidden cursor-pointer">
+                <img src="https://images.unsplash.com/photo-1487222477894-8943e31ef7b2?w=800"
+                    class="w-full h-full object-cover transition duration-700 group-hover:scale-105">
+                <div class="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition"></div>
+                <div class="absolute bottom-8 left-8 text-white">
+                    <h3 class="font-serif text-2xl mb-2">Office Essentials</h3>
+                    <a href="#" class="text-[10px] uppercase tracking-widest border-b border-white pb-1">Shop Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Customer Loves -->
+    <section class="py-20 bg-white">
+        <div class="max-w-[1400px] mx-auto px-6 lg:px-12">
+            <div class="text-center mb-16 reveal">
+                <h2 class="font-serif text-3xl md:text-4xl text-brand-dark uppercase tracking-widest">Customer Loves
+                </h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 reveal">
+                <!-- Testimonial 1 -->
+                <div class="testimonial-card">
+                    <div class="w-20 h-20 mx-auto rounded-full overflow-hidden mb-4 border-2 border-brand-gold/20">
+                        <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=200"
+                            class="w-full h-full object-cover">
+                    </div>
+                    <p class="text-sm italic text-brand-gray mb-4">"Absolutely stunning pieces! The quality is unmatched
+                        and the delivery was super fast. Highly recommend Riwayat for special occasions."</p>
+                    <div class="text-brand-gold text-xs mb-2">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <h4 class="font-serif text-lg text-brand-dark">Sarah Jenkins</h4>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="testimonial-card">
+                    <div class="w-20 h-20 mx-auto rounded-full overflow-hidden mb-4 border-2 border-brand-gold/20">
+                        <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=200"
+                            class="w-full h-full object-cover">
+                    </div>
+                    <p class="text-sm italic text-brand-gray mb-4">"I love the minimalist collection. It fits perfectly
+                        and feels so premium. Will definitely be shopping here again soon."</p>
+                    <div class="text-brand-gold text-xs mb-2">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <h4 class="font-serif text-lg text-brand-dark">Emily Clarke</h4>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="testimonial-card">
+                    <div class="w-20 h-20 mx-auto rounded-full overflow-hidden mb-4 border-2 border-brand-gold/20">
+                        <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=200"
+                            class="w-full h-full object-cover">
+                    </div>
+                    <p class="text-sm italic text-brand-gray mb-4">"The customer service team went above and beyond to
+                        help me with my size. The dress is beautiful and fits like a glove."</p>
+                    <div class="text-brand-gold text-xs mb-2">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <h4 class="font-serif text-lg text-brand-dark">Jessica Lee</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sustainability -->
+    <section class="relative py-32 overflow-hidden">
+        <!-- Background Parallax -->
+        <div class="absolute inset-0 bg-fixed bg-center bg-cover"
+            style="background-image: url('https://images.unsplash.com/photo-1523381210434-271e8be1f52b?w=2070&q=80');">
+        </div>
+        <div class="absolute inset-0 bg-black/40"></div>
+
+        <!-- Content -->
+        <div class="relative z-10 max-w-[1400px] mx-auto px-6 lg:px-12 flex justify-end">
+            <div class="bg-white/10 backdrop-blur-md border border-white/20 p-12 md:p-16 max-w-2xl text-white reveal">
+                <span class="text-brand-gold text-xs font-bold uppercase tracking-widest mb-4 block">Conscious
+                    Luxury</span>
+                <h2 class="font-serif text-4xl md:text-5xl mb-6">Sustainability at Heart</h2>
+                <p class="text-gray-200 mb-8 leading-relaxed font-light text-lg">
+                    We believe that true luxury lies in the stories behind the stitches. Our commitment to ethical
+                    sourcing and sustainable practices ensures that every piece you wear not only looks beautiful but
+                    feels right.
+                </p>
+
+                <div class="grid grid-cols-2 gap-8 mb-10">
+                    <div>
+                        <h4 class="font-serif text-2xl text-brand-gold mb-2">100%</h4>
+                        <p class="text-xs uppercase tracking-widest">Ethical Sourcing</p>
+                    </div>
+                    <div>
+                        <h4 class="font-serif text-2xl text-brand-gold mb-2">Zero</h4>
+                        <p class="text-xs uppercase tracking-widest">Plastic Packaging</p>
+                    </div>
+                </div>
+
+                <a href="#"
+                    class="inline-block border border-white px-8 py-3 text-xs uppercase tracking-widest hover:bg-white hover:text-brand-dark transition duration-300">
+                    Read Our Impact Report
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-brand-dark text-white pt-24 pb-12 border-t border-white/10">
+        <div class="max-w-[1600px] mx-auto px-6 lg:px-12">
+            <!-- Top Section: Logo & Back to Top -->
+            <div class="flex flex-col md:flex-row justify-between items-center mb-20">
+                <a href="#"
+                    class="font-serif text-5xl md:text-7xl tracking-widest font-medium hover:text-brand-gold transition duration-500">RIWAYAT</a>
+                <button onclick="window.scrollTo({top: 0, behavior: 'smooth'})"
+                    class="hidden md:flex items-center gap-2 text-xs uppercase tracking-widest hover:text-brand-gold transition group">
+                    Back to Top
+                    <span class="w-8 h-[1px] bg-white group-hover:bg-brand-gold transition"></span>
+                </button>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-12 mb-24 border-b border-white/10 pb-24">
+                <!-- Newsletter (Takes up more space) -->
+                <div class="col-span-1 md:col-span-5 md:pr-12">
+                    <h4 class="font-serif text-3xl mb-6">Join Our World</h4>
+                    <p class="text-gray-400 text-sm mb-8 font-light leading-relaxed">Subscribe to receive updates,
+                        access to exclusive deals, and more.</p>
+                    <form class="flex flex-col sm:flex-row gap-4">
+                        <input type="email" placeholder="Enter your email address"
+                            class="bg-transparent border-b border-white/30 py-3 text-sm focus:outline-none focus:border-brand-gold w-full placeholder-gray-500 transition">
+                        <button
+                            class="text-xs font-bold uppercase tracking-widest hover:text-brand-gold transition py-3 border-b border-transparent hover:border-brand-gold text-left sm:text-center">
+                            Subscribe
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Links Grid -->
+                <div class="col-span-1 md:col-span-2">
+                    <h4 class="text-xs font-bold uppercase tracking-widest text-brand-gold mb-8">Shop</h4>
+                    <ul class="space-y-4 text-xs text-gray-400 font-medium tracking-wide">
+                        <li><a href="#" class="hover:text-white transition">New Arrivals</a></li>
+                        <li><a href="#" class="hover:text-white transition">Best Sellers</a></li>
+                        <li><a href="#" class="hover:text-white transition">Clothing</a></li>
+                        <li><a href="#" class="hover:text-white transition">Accessories</a></li>
+                        <li><a href="#" class="hover:text-white transition">Sale</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-span-1 md:col-span-2">
+                    <h4 class="text-xs font-bold uppercase tracking-widest text-brand-gold mb-8">Company</h4>
+                    <ul class="space-y-4 text-xs text-gray-400 font-medium tracking-wide">
+                        <li><a href="#" class="hover:text-white transition">Our Story</a></li>
+                        <li><a href="#" class="hover:text-white transition">Sustainability</a></li>
+                        <li><a href="#" class="hover:text-white transition">Careers</a></li>
+                        <li><a href="#" class="hover:text-white transition">Press</a></li>
+                        <li><a href="#" class="hover:text-white transition">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-span-1 md:col-span-3">
+                    <h4 class="text-xs font-bold uppercase tracking-widest text-brand-gold mb-8">Contact & Support</h4>
+                    <ul class="space-y-4 text-xs text-gray-400 font-medium tracking-wide">
+                        <li><a href="#" class="hover:text-white transition">Shipping & Returns</a></li>
+                        <li><a href="#" class="hover:text-white transition">FAQ</a></li>
+                        <li><a href="#" class="hover:text-white transition">Contact Us</a></li>
+                        <li class="pt-4 text-white">support@riwayat.com</li>
+                        <li class="text-white">+1 (555) 123-4567</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Bottom Section -->
+            <div
+                class="flex flex-col md:flex-row justify-between items-center gap-6 text-[10px] text-gray-500 uppercase tracking-widest font-medium">
+                <div class="flex gap-6">
+                    <a href="#" class="hover:text-white transition">Privacy Policy</a>
+                    <a href="#" class="hover:text-white transition">Cookie Policy</a>
+                </div>
+                <p>&copy; 2024 Riwayat Design. All Rights Reserved.</p>
+                <div class="flex gap-4 text-lg">
+                    <i class="fab fa-instagram hover:text-brand-gold transition cursor-pointer"></i>
+                    <i class="fab fa-facebook-f hover:text-brand-gold transition cursor-pointer"></i>
+                    <i class="fab fa-pinterest hover:text-brand-gold transition cursor-pointer"></i>
+                    <i class="fab fa-twitter hover:text-brand-gold transition cursor-pointer"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Menu Toggle
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        }
+
+        // Search Toggle
+        function toggleSearch() {
+            const container = document.getElementById('search-container');
+            container.classList.toggle('active');
+            if (container.classList.contains('active')) {
+                container.querySelector('input').focus();
+            }
+        }
+
+        // Navbar Scroll Effect
+        window.addEventListener('scroll', function () {
+            const navbar = document.getElementById('navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('navbar-scrolled');
+                navbar.classList.remove('navbar-transparent', 'text-white');
+                navbar.classList.add('text-brand-dark');
+            } else {
+                navbar.classList.remove('navbar-scrolled', 'text-brand-dark');
+                navbar.classList.add('navbar-transparent', 'text-white');
+            }
+        });
+
+        // Reveal on Scroll
+        function reveal() {
+            var reveals = document.querySelectorAll(".reveal");
+            for (var i = 0; i < reveals.length; i++) {
+                var windowHeight = window.innerHeight;
+                var elementTop = reveals[i].getBoundingClientRect().top;
+                var elementVisible = 150;
+                if (elementTop < windowHeight - elementVisible) {
+                    reveals[i].classList.add("active");
+                }
+            }
+        }
+        window.addEventListener("scroll", reveal);
+        // Trigger once on load
+        reveal();
+
+        // Mega Menu Click-to-Lock
+        document.addEventListener('DOMContentLoaded', function () {
+            const navItems = document.querySelectorAll('.nav-item');
+
+            navItems.forEach(item => {
+                const link = item.querySelector('a');
+                if (link) {
+                    link.addEventListener('click', function (e) {
+                        e.preventDefault(); // Prevent jump
+
+                        // Toggle active class on this item
+                        const wasActive = item.classList.contains('active');
+
+                        // Close all others
+                        navItems.forEach(other => other.classList.remove('active'));
+
+                        if (!wasActive) {
+                            item.classList.add('active');
+                        }
+                    });
+                }
+            });
+
+            // Close when clicking outside
+            document.addEventListener('click', function (e) {
+                if (!e.target.closest('.nav-item')) {
+                    navItems.forEach(item => item.classList.remove('active'));
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
+});
+</script>
+</body>
+
+</html>
